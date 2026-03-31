@@ -6,17 +6,12 @@
   },
   "metadata": {
     "description": "Claude Code plugin marketplace for bit VCS",
-    "version": "1.0.0"
+    "version": "1.1.0"
   },
   "plugins": [
     {
       "name": "bit-skills",
-      "source": {
-        "source": "git-subdir",
-        "url": "bit-vcs/bit",
-        "path": ".claude",
-        "ref": "main"
-      },
+      "source": "./",
       "version": "0.2.0",
       "description": "Agent skills for bit VCS — Git-native task management, session coordination, code review, CI fixes, and issue triage",
       "strict": true,

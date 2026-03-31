@@ -11,11 +11,24 @@ claude plugin install bit-skills@bit-skills
 
 ## Available Skills
 
+### Core (no relay required)
+
 | Skill | Description |
 |-------|-------------|
-| **start-work** | Session coordination with bit issue — declare scope, detect file overlaps, manage parallel work |
-| **relay-sync** | Synchronize issues and PRs across repositories via relay server |
-| **auto-review** | Automated PR code review triggered by relay events |
-| **fix-ci** | Investigate and fix CI failures triggered by relay events |
-| **triage-issue** | Analyze and triage new issues triggered by relay events |
-| **relay-respond** | Push results back to relay rooms after task completion |
+| **bit-issue** | Git-native task management — create, track, search, sub-issues |
+| **start-work** | Session coordination — declare scope, detect file overlaps, manage parallel work |
+
+### Automation
+
+| Skill | Description |
+|-------|-------------|
+| **auto-review** | Structured PR code review |
+| **fix-ci** | Investigate and fix CI failures |
+| **triage-issue** | Analyze and triage issues |
+
+### Relay (optional, for cross-machine sync)
+
+| Skill | Description |
+|-------|-------------|
+| **relay-sync** | Synchronize issues/PRs across repositories via relay server |
+| **relay-respond** | Push results back to relay rooms |
