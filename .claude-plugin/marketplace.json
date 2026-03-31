@@ -1,0 +1,26 @@
+{
+  "name": "bit-skills",
+  "owner": {
+    "name": "bit-vcs",
+    "url": "https://github.com/bit-vcs"
+  },
+  "metadata": {
+    "description": "Claude Code plugin marketplace for bit VCS",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "bit-skills",
+      "source": {
+        "source": "git-subdir",
+        "url": "bit-vcs/bit",
+        "path": ".claude",
+        "ref": "main"
+      },
+      "version": "0.1.0",
+      "description": "Agent skills for bit VCS — session coordination, relay-driven CI fixes, PR reviews, and issue triage",
+      "strict": true,
+      "keywords": ["bit", "vcs", "git", "relay", "moonbit"]
+    }
+  ]
+}
